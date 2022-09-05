@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.root{
+    --bg-color: white;
+    --text-color: rgba(0, 0, 0, 0.84);
+
+
+}
+body{
+    background-color: var(--bg-color);
+    transition: 0.34s;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+
+}
+.container h2 {
+    font-size: 70px;
+    color: var(--text-color);
+}
+.container button{
+    margin-left: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;
+    outline: 0;
+}
+.container button span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+
+}
+.container button span.sun{
+    background-color: rgb(246, 214, 12);
+    transition: 00.3s;
+}
+.container button span.moon{
+    background-color: rgba(0, 0, 0, 0.84);
+    color: white;
+}
+.darkmode{
+    --bg-color:   rgba(0, 0, 0, 0.84);
+    --text-color:  white;
+    transition: 0.34s;
+}
+
